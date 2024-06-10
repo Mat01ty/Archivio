@@ -343,10 +343,10 @@ header .burger div {
     font-family: sans-serif; 
 }
 .footer h2 {
-    color: white; 
-    background-color: #b2403e; 
-    border-radius: 10px; 
-    padding: 10px 10px; 
-    display: inline-flex; 
+    color: #f5efe6; 
+    background-color: #ecb665; 
+    border-radius: 7px; 
+    padding: 5px 10px; 
+    display: inline-block; 
     align-items: center;
 }
