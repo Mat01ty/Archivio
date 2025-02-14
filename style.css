@@ -10,16 +10,16 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 100px;
-    z-index: 10;
-    background-color: #3b5a82;
+    padding: 20px 50px;
+    z-index: 1000;
+    background-color: #b2403e;
     box-shadow: 0 5px 5px rgb(0, 0, 0, 0.1);
 }
 
@@ -85,15 +85,15 @@ header .burger div {
 
 .banner {
     background: #f5efe6;
-    padding: 200px 150px 100px;
+    padding: 150px 150px 10px;
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
     justify-content: space-between;
     align-items: center;
 }
 
 .banner .content {
-    max-width: 700px;
+    max-width: 850px;
 }
 
 .banner .content h2 {
@@ -112,35 +112,66 @@ header .burger div {
 }
 
 .banner .images {
-    max-width: 450px;
+    max-width: 300px;
 }
 
 .banner2 {
-    background: #3b5a82;
-    padding: 200px 150px 100px;
+    background: #f5efe6; 
+    padding: 100px 50px;
     display: flex;
-    min-height: 100vh;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.banner2 .content-wrapper {
+    background: #3b5a82; 
+    border-radius: 60px; 
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); 
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    text-align: left;
 }
 
 .banner2 .content {
-    max-width: 600px;
+    flex: 1;
+    padding-right: 30px;
 }
 
 .banner2 .content h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: #f5efe6;
 }
 
-.banner2 .content p {
-    font-size: 20px;
+.banner2 .content p, .banner2 .content p2 {
+    font-size: 18px;
     color: #f5efe6;
     font-family: Tahoma;
 }
 
-.banner2 .images {
-    max-width: 600px;
+.banner2 .image-wrapper {
+    flex-shrink: 0;
+}
+
+.banner2 .image-wrapper img {
+    max-width: 250px;
+    border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+    .banner2 .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .banner2 .content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .banner3 {
@@ -149,7 +180,125 @@ header .burger div {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 10vh;
+}
+
+body {
+    background: #f5efe6 !important;
+}
+/* 🌟 Titolo "PORTFOLIO" centrato sopra il riquadro */
+.portfolio-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #293241;
+}
+
+/* 🌟 Contenitore dei 4 caroselli */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne per desktop */
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 🌟 Carosello con immagine quadrata */
+.carousel-wrapper {
+    background: white; /* Sfondo bianco */
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px; /* Imposta una larghezza massima */
+}
+
+/* 🌟 Imposta dimensioni immagini */
+.carousel {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* 🌟 Frecce dentro il carosello */
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* 🌟 Testo sotto ogni carosello */
+.carousel-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #293241;
+    font-weight: 500;
+}
+
+.portfolio-section {
+    background: #f5efe6;
+    padding: 50px 0; /* Aggiunge spazio interno sopra e sotto */
+    margin-bottom: 80px; /* Aggiunge spazio sotto il portfolio */
+}
+
+/* 🌟 Responsive per schermi più piccoli */
+@media (max-width: 992px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr); /* Una sola colonna */
+        gap: 30px;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    background: #3b5a82;
+    border-radius: 20px; /* Bordi arrotondati */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner3 .content {
@@ -157,23 +306,61 @@ header .burger div {
     width: 100%;
 }
 
-.banner3 .carousel {
+.carousel {
     width: 100%;
+    max-width: 500px;
+    position: relative;
 }
 
-.banner3 .carousel img {
+.carousel-item {
+    background: #293241;
+    border-radius: 20px; /* Bordo arrotondato */
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 300px; /* Mantiene il quadrato */
+    object-fit: cover;
+    border-radius: 15px; /* Arrotonda i bordi */
 }
 
-.slick-dots {
-    bottom: 10px;
+.carousel-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #f5efe6;
+    font-weight: 500;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: #3b5a82;
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente per le frecce */
+    color: #293241;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
 }
 
 .slick-dots li.slick-active button:before {
@@ -349,4 +536,44 @@ header .burger div {
     padding: 5px 10px; 
     display: inline-block; 
     align-items: center;
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #3b5a82;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#backToTop i {
+    font-size: 24px;
+}
+
+#backToTop:hover {
+    background-color: #b2403e;
+}
+
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+#backToTop {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
