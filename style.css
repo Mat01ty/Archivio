@@ -7,6 +7,7 @@
 body {
     font-family: "ohno-softie-variable", sans-serif, Verdana;
     font-variation-settings: "wght" 300;
+    background: #f5efe6 !important;
 }
 
 header {
@@ -27,7 +28,7 @@ header #navigation {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 0;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 header #navigation li {
@@ -46,20 +47,20 @@ header #navigation li a {
     letter-spacing: 1px;
 }
 
-header .burger {
+header #burger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     margin-left: auto;
 }
 
-header .burger div {
+header #burger div {
     width: 25px;
     height: 3px;
     background-color: #f5efe6;
     margin: 5px;
     transition: all 0.3s ease;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
 
 @media (max-width: 768px) {
@@ -78,45 +79,42 @@ header .burger div {
         display: flex;
     }
 
-    header .burger {
+    header #burger {
         display: flex;
     }
 }
 
-.banner {
+#banner-1 {
     background: #f5efe6;
+    min-height: 90vh;
     padding: 150px 150px 10px;
     display: flex;
-    min-height: 90vh;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
 }
 
-.banner .content {
+#banner-1 #biografia {
     max-width: 850px;
 }
 
-.banner .content h2 {
+#banner-1 #biografia h1 {
     font-size: 40px;
     color: #293241;
 }
 
-.banner .content p {
+#banner-1 #biografia p {
     font-size: 20px;
     color: #293241;
     font-family: Tahoma;
 }
 
-.banner .content i {
-    font-size: 50px;
-}
-
-.banner .images {
+#banner-1 img {
     max-width: 300px;
 }
 
-.banner2 {
-    background: #f5efe6; 
+#banner-2 {
+    background: #f5efe6;
     padding: 100px 50px;
     display: flex;
     justify-content: center;
@@ -124,10 +122,10 @@ header .burger div {
     min-height: 100vh;
 }
 
-.banner2 .content-wrapper {
-    background: #3b5a82; 
-    border-radius: 60px; 
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2); 
+#banner-2 #chi-sono {
+    background: #3b5a82;
+    border-radius: 60px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
     padding: 50px;
     display: flex;
     align-items: center;
@@ -136,39 +134,48 @@ header .burger div {
     text-align: left;
 }
 
-.banner2 .content {
+#banner-2 .content {
     flex: 1;
     padding-right: 30px;
 }
 
-.banner2 .content h2 {
+#banner-2 .content h2 {
     font-size: 35px;
     color: #f5efe6;
 }
 
-.banner2 .content p, .banner2 .content p2 {
+#banner-2 .content div,
+#banner-2 .content p {
     font-size: 18px;
     color: #f5efe6;
     font-family: Tahoma;
 }
 
-.banner2 .image-wrapper {
+#banner-2 .content div address {
+    font-style: normal;
+}
+
+#banner-2 .content div a {
+    color: #f5efe6;
+}
+
+#banner-2 .image-wrapper {
     flex-shrink: 0;
 }
 
-.banner2 .image-wrapper img {
+#banner-2 .image-wrapper img {
     max-width: 250px;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-    .banner2 .content-wrapper {
+    #banner-2 #chi-sono {
         flex-direction: column;
         text-align: center;
         padding: 30px;
     }
 
-    .banner2 .content {
+    #banner-2 .content {
         padding-right: 0;
         margin-bottom: 20px;
     }
@@ -183,10 +190,6 @@ header .burger div {
     min-height: 10vh;
 }
 
-body {
-    background: #f5efe6 !important;
-}
-/* 🌟 Titolo "PORTFOLIO" centrato sopra il riquadro */
 .portfolio-title {
     text-align: center;
     font-size: 32px;
@@ -195,10 +198,9 @@ body {
     color: #293241;
 }
 
-/* 🌟 Contenitore dei 4 caroselli */
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Due colonne per desktop */
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-content: center;
     align-items: center;
@@ -207,23 +209,26 @@ body {
     padding: 20px;
 }
 
-/* 🌟 Carosello con immagine quadrata */
+#portfolio {
+    background: #f5efe6;
+    padding: 50px 0;
+    margin-bottom: 80px;
+}
+
 .carousel-wrapper {
-    background: white; /* Sfondo bianco */
+    text-align: center;
+    width: 100%;
+    background: #3b5a82;
     border-radius: 20px;
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 650px; /* Imposta una larghezza massima */
 }
 
-/* 🌟 Imposta dimensioni immagini */
 .carousel {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
 }
 
@@ -234,103 +239,6 @@ body {
     border-radius: 15px;
 }
 
-/* 🌟 Frecce dentro il carosello */
-.slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.slick-prev {
-    left: 10px;
-}
-
-.slick-next {
-    right: 10px;
-}
-
-/* 🌟 Testo sotto ogni carosello */
-.carousel-text {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #293241;
-    font-weight: 500;
-}
-
-.portfolio-section {
-    background: #f5efe6;
-    padding: 50px 0; /* Aggiunge spazio interno sopra e sotto */
-    margin-bottom: 80px; /* Aggiunge spazio sotto il portfolio */
-}
-
-/* 🌟 Responsive per schermi più piccoli */
-@media (max-width: 992px) {
-    .portfolio-container {
-        grid-template-columns: repeat(1, 1fr); /* Una sola colonna */
-        gap: 30px;
-    }
-
-    .carousel {
-        max-width: 100%;
-    }
-}
-
-.carousel-container {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.carousel-wrapper {
-    background: #3b5a82;
-    border-radius: 20px; /* Bordi arrotondati */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner3 .content {
-    max-width: 50%;
-    width: 100%;
-}
-
-.carousel {
-    width: 100%;
-    max-width: 500px;
-    position: relative;
-}
-
-.carousel-item {
-    background: #293241;
-    border-radius: 20px; /* Bordo arrotondato */
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.carousel img {
-    width: 100%;
-    height: 300px; /* Mantiene il quadrato */
-    object-fit: cover;
-    border-radius: 15px; /* Arrotonda i bordi */
-}
-
 .carousel-text {
     margin-top: 15px;
     font-size: 18px;
@@ -338,12 +246,13 @@ body {
     font-weight: 500;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente per le frecce */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #293241;
     border: none;
     border-radius: 50%;
@@ -362,6 +271,13 @@ body {
 .slick-next {
     right: 10px;
 }
+
+
+.banner3 .content {
+    max-width: 50%;
+    width: 100%;
+}
+
 
 .slick-dots li.slick-active button:before {
     color: #3b5a82;
@@ -372,7 +288,8 @@ body {
         padding: 25px 50px;
     }
 
-    .banner, .banner2 {
+    #banner-1,
+    #banner-2 {
         padding: 150px 50px 50px;
     }
 }
@@ -382,18 +299,25 @@ body {
         padding: 25px 30px;
     }
 
-    .banner, .banner2 {
+    #banner-1,
+    #banner-2 {
         padding: 120px 30px 30px;
         flex-direction: column;
         text-align: center;
     }
 
-    .banner .images, .banner2 .images {
+    #banner-1 img,
+    #banner-2 .images {
         margin-top: 20px;
     }
 
     .banner3 .content {
         max-width: 70%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
 }
 
@@ -402,7 +326,8 @@ body {
         padding: 25px 20px;
     }
 
-    .banner, .banner2 {
+    #banner-1,
+    #banner-2 {
         padding: 100px 20px 20px;
     }
 
@@ -415,12 +340,15 @@ body {
         margin: 5px 0;
     }
 
-    .banner .content, .banner2 .content, .banner3 .content {
+    #banner-1 #biografia,
+    #banner-2 .content,
+    .banner3 .content {
         max-width: 100%;
         padding: 0 10px;
     }
 
-    .banner .images, .banner2 .images {
+    #banner-1 img,
+    #banner-2 .images {
         max-width: 100%;
     }
 }
@@ -430,61 +358,67 @@ body {
         padding: 20px 10px;
     }
 
-    .banner, .banner2 {
+    #banner-2 {
         padding: 80px 10px 10px;
     }
 
-    .banner .content h2, .banner2 .content h2 {
+    #banner-1 #biografia h2,
+    #banner-2 .content h2 {
         font-size: 30px;
     }
 
-    .banner .content p, .banner2 .content p {
+    #banner-1 #biografia p,
+    #banner-2 .content p {
         font-size: 18px;
     }
 
-    .banner .content i {
+    #banner-1 #biografia i {
         font-size: 40px;
+    }
+
+    .carousel-wrapper {
+        max-width: 95vw;
     }
 }
 
-.banner4 {
-    background: #3b5a82; 
-    padding: 100px 50px; 
+#banner-4 {
+    background: #3b5a82;
+    padding: 100px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
-.banner4 .content {
-    background: #ffffff; 
+#banner-4 #contatti {
+    background: #ffffff;
     padding: 40px;
-    border-radius: 40px; 
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.8); 
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.8);
     max-width: 500px;
     width: 100%;
 }
 
-.banner4 h2 {
+#banner-4 h2 {
     font-size: 28px;
     color: #293241;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.banner4 .form-group {
+#banner-4 .form-group {
     margin-bottom: 15px;
 }
 
-.banner4 .form-group label {
+#banner-4 .form-group label {
     display: block;
     font-size: 16px;
     color: #293241;
     margin-bottom: 5px;
 }
 
-.banner4 .form-group input,
-.banner4 .form-group textarea {
+#banner-4 .form-group input,
+#banner-4 .form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -493,11 +427,11 @@ body {
     color: #293241;
 }
 
-.banner4 .form-group textarea {
-    resize: vertical; 
+#banner-4 .form-group textarea {
+    resize: vertical;
 }
 
-.banner4 button {
+#banner-4 button {
     display: block;
     width: 100%;
     padding: 12px;
@@ -510,36 +444,39 @@ body {
     transition: cubic-bezier() 0.3s;
 }
 
-.banner4 button:hover {
+#banner-4 button:hover {
     background: #b2403e;
 }
-.footer {
+
+footer {
     background-color: #f5efe6;
     color: #293241;
     padding: 40px;
     text-align: center;
-    line-height: 1; 
+    line-height: 1;
 }
 
-.footer p {
-    font-family: Tahoma; 
-    margin: 0 30px; 
+footer p {
+    font-family: Tahoma;
+    margin: 0 30px;
 }
 
-.footer h5 {
-    font-family: sans-serif; 
+footer div {
+    font-family: sans-serif;
 }
-.footer h2 {
-    color: #f5efe6; 
-    background-color: #ecb665; 
-    border-radius: 7px; 
-    padding: 5px 10px; 
-    display: inline-block; 
+
+footer h2 {
+    color: #f5efe6;
+    background-color: #ecb665;
+    border-radius: 7px;
+    padding: 5px 10px;
+    display: inline-block;
     align-items: center;
 }
 
 
 #backToTop {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     bottom: 40px;
     right: 30px;
@@ -573,6 +510,7 @@ body {
     visibility: visible;
     transform: translateY(0);
 }
+
 #backToTop {
     opacity: 1 !important;
     visibility: visible !important;
