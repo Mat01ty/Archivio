@@ -190,6 +190,7 @@ header #burger div {
     min-height: 10vh;
 }
 
+/* Titolo "PORTFOLIO" centrato sopra il riquadro */
 .portfolio-title {
     text-align: center;
     font-size: 32px;
@@ -198,9 +199,11 @@ header #burger div {
     color: #293241;
 }
 
+/* Contenitore dei 4 caroselli */
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* Due colonne per desktop */
     gap: 40px;
     justify-content: center;
     align-items: center;
@@ -212,7 +215,9 @@ header #burger div {
 #portfolio {
     background: #f5efe6;
     padding: 50px 0;
+    /* Aggiunge spazio interno sopra e sotto */
     margin-bottom: 80px;
+    /* Aggiunge spazio sotto il portfolio */
 }
 
 .carousel-wrapper {
@@ -239,6 +244,7 @@ header #burger div {
     border-radius: 15px;
 }
 
+/* Testo sotto ogni carosello */
 .carousel-text {
     margin-top: 15px;
     font-size: 18px;
@@ -246,6 +252,9 @@ header #burger div {
     font-weight: 500;
 }
 
+
+
+/* Frecce dentro il carosello */
 .slick-prev,
 .slick-next {
     position: absolute;
@@ -317,6 +326,7 @@ header #burger div {
 
     .portfolio-container {
         grid-template-columns: repeat(1, 1fr);
+        /* Una sola colonna */
         gap: 30px;
     }
 }
