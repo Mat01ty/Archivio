@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "ohno-softie-variable", Verdana;
+    font-family: "ohno-softie-variable", sans-serif, Verdana;
     font-variation-settings: "wght" 300;
     background: #f5efe6 !important;
 }
