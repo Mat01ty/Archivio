@@ -1,192 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Matilde Marina Portfolio</title>
     <link rel="stylesheet" href="https://use.typekit.net/ntl3jov.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
-<script src="Javascript.js" defer></script>
+
 <body>
-<header>
-    <ul class="menu" id="navigation">
-        <li><a href="#Chi sono">Chi sono</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contatti">Contatti</a></li>
-    </ul>
-    <div class="burger" id="burger">
-        <div></div>
-        <div></div>
-        <div></div>
+    <header>
+        <ul id="navigation">
+            <li><a href="#chi-sono">Chi sono</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+        <div id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner-1">
+            <img src="img/logo0.png">
+            <div id="biografia">
+                <h1>Il mio portfolio!</h1> <br>
+                <p> Questo è il posto in cui condivido il mio percorso creativo,
+                    tra idee, progetti e ispirazioni.
+                    <br>Esplora il mio portfolio e
+                    scopri le diverse sfaccettature del mio lavoro.
+                    Dai progetti accademici a quelli personali, ho raccolto
+                    una selezione dei lavori a cui tengo di più, per raccontarti
+                    il mio stile e le mie competenze. Ogni progetto è nato con l'obiettivo di creare
+                    qualcosa di autentico e memorabile.
+                </p>
+            </div>
+        </section>
+
+        <section id="banner-2">
+            <div id="chi-sono">
+                <div class="content">
+                    <h2>Chi sono?</h2><br><br>
+                    <p>Mi chiamo Matilde, ho 23 anni e sono una studentessa
+                        dell'Accademia di Belle Arti di Novara ACME. <br>Frequento il corso di
+                        graphic design & art direction. <br>
+                        Sono una persona creativa, curiosa e determinata, con grande passione
+                        per il design e la comunicazione visiva.
+                    </p>
+                    <br><br>
+                    <div>
+                        31/12/2001<br>
+                        <address>Biella, Piemonte, Italia</address>
+                        <a href="mailto:matimarina2001@gmail.com">matimarina2001@gmail.com</a><br>
+                        <a href="tel:3921965138">3921965138</a>
+                    </div>
+                </div>
+
+                <div class="image-wrapper">
+                    <img src="img/foto.png" alt="Foto di Matilde">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio">
+            <h2 class="portfolio-title">PORTFOLIO</h2>
+
+            <div class="portfolio-container">
+                <!-- PRIMO CAROSELLO -->
+                <div class="carousel-wrapper">
+                    <div class="carousel carousel-1">
+                        <div><img src="img/rivista2.jpg" alt="Progetto 1 - 1"></div>
+                        <div><img src="img/rivistainterno2.jpg" alt="Progetto 1 - 2"></div>
+                    </div>
+                    <p class="carousel-text">Magazine creato con lo scopo
+                        di demolire i tabù e abbattere
+                        gli stereotipi, oltre a dare
+                        consigli di moda e beauty.</p>
+                </div>
+
+                <!-- SECONDO CAROSELLO -->
+                <div class="carousel-wrapper">
+                    <div class="carousel carousel-2">
+                        <div><img src="img/vino1.jpg" alt="Progetto 2 - 1"></div>
+                        <div><img src="img/vino2.jpg" alt="Progetto 2 - 2"></div>
+                    </div>
+                    <p class="carousel-text">Creazione di un’etichetta
+                        per il pregiato vino Barolo,
+                        ispirata alla donna che
+                        commette il peccato
+                        originale.</p>
+                </div>
+
+                <!-- TERZO CAROSELLO -->
+                <div class="carousel-wrapper">
+                    <div class="carousel carousel-3">
+                        <div><img src="img/primario 3.png" alt="Progetto 3 - 1"></div>
+                        <div><img src="img/collezione 1.png" alt="Progetto 3 - 2"></div>
+                        <div><img src="img/terziario 3.png" alt="Progetto 3 - 3"></div>
+                    </div>
+                    <p class="carousel-text">Creazione di una linea di tisane
+                        per Chimitè. Realizzazione di packaging primario, secondario e terziario.
+                    </p>
+                </div>
+
+                <!-- QUARTO CAROSELLO -->
+                <div class="carousel-wrapper">
+                    <div class="carousel carousel-4">
+                        <div><img src="img/mockup logo.png" alt="Progetto 4 - 1"></div>
+                        <div><img src="img/piglietto da visita.png" alt="Progetto 4 - 2"></div>
+                        <div><img src="img/tazze con sfondo.png" alt="Progetto 4 - 3"></div>
+                    </div>
+                    <p class="carousel-text">MIC: realizzazione del mio manuale di identità coordinata.
+                        Creazione di mockup con il mio logo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="banner-4">
+            <div id=contatti class="content">
+                <h2>Richiedi Informazioni</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Cognome:</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numero di Telefono:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <h2>CONTATTI</h2><br><br>
+        <div>
+            <p>Email: <a href="matimarina2001@gmail.com">matimarina2001@gmail.com</a></p><br>
+            <p>Telefono: <a href="tel:3921965138">3921965138</a></p><br>
+            <p>Profilo Instagram: <a href="https://www.instagram.com/mattys.graphia/" target="_blank">mattys.graphia</a>
+            </p><br>
+            <p>© 2025 Matilde Marina. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <div id="backToTop">
+        <i class="fas fa-arrow-up"></i>
     </div>
-</header>
-<div class="banner">
-    <img src="img/logo0.png" class="images">
-    <div id="biografia" class="content">
-        <br><h2>Il mio portfolio!</h2> <br>
-        <p> Questo è il posto in cui condivido il mio percorso creativo, 
-            tra idee, progetti e ispirazioni. 
-            <br>Esplora il mio portfolio e 
-            scopri le diverse sfaccettature del mio lavoro. 
-            Dai progetti accademici a quelli personali, ho raccolto 
-            una selezione dei lavori a cui tengo di più, per raccontarti 
-            il ​​mio stile e le mie competenze. Ogni progetto è nato con l'obiettivo di creare 
-            qualcosa di autentico e memorabile.</p></br></br>
-    
-        </i>
-    </div>
-</div>
-<div class="banner2">
-    <div id="Chi sono" class="content-wrapper">
-        <div class="content">
-            <h2>Chi sono?</h2><br><br>
-            <p>Mi chiamo Matilde, ho 23 anni e sono una studentessa 
-                dell'Accademia di Belle Arti di Novara ACME. <br>Frequento il corso di
-                graphic design & art direction. <br>
-                Sono una persona creativa, curiosa e determinata, con grande passione 
-                per il design e la comunicazione visiva. <br><br><br>
-            </p>
-            <p>
-                31/12/2001<br>
-                Biella, Piemonte, Italia<br>
-                matimarina2001@gmail.com<br>
-                3921965138
-            </p>
-        </div>
-        <!-- Correzione della sintassi -->
-        <div class="image-wrapper">
-            <img src="img/foto.png" class="images" alt="Foto di Matilde">
-        </div>
-    </div>
-</div>
 
-
-<div class="portfolio-section" id="portfolio">
-    <h2 class="portfolio-title">PORTFOLIO</h2>
-
-    <div class="portfolio-container">
-        <!-- PRIMO CAROSELLO -->
-        <div class="carousel-wrapper">
-            <div class="carousel carousel-1">
-                <div><img src="img/rivista2.jpg" alt="Progetto 1 - 1"></div>
-                <div><img src="img/rivistainterno2.jpg" alt="Progetto 1 - 2"></div>
-            </div>
-            <p class="carousel-text">Magazine creato con lo scopo
-                di demolire i tabù e abbattere
-                gli stereotipi, oltre a dare
-                consigli di moda e beauty.</p>
-        </div>
-
-        <!-- SECONDO CAROSELLO -->
-        <div class="carousel-wrapper">
-            <div class="carousel carousel-2">
-                <div><img src="img/vino1.jpg" alt="Progetto 2 - 1"></div>
-                <div><img src="img/vino2.jpg" alt="Progetto 2 - 2"></div>
-            </div>
-            <p class="carousel-text">Creazione di un’etichetta
-                per il pregiato vino Barolo,
-                ispirata alla donna che
-                commette il peccato
-                originale.</p>
-        </div>
-
-        <!-- TERZO CAROSELLO -->
-        <div class="carousel-wrapper">
-            <div class="carousel carousel-3">
-                <div><img src="img/primario 3.png" alt="Progetto 3 - 1"></div>
-                <div><img src="img/collezione 1.png" alt="Progetto 3 - 2"></div>
-                <div><img src="img/terziario 3.png" alt="Progetto 3 - 3"></div>
-            </div>
-            <p class="carousel-text">Creazione di una linea di tisane
-                per Chimitè. Realizzazione di packaging primario, secondario e terziario.
-            </p>
-        </div>
-
-        <!-- QUARTO CAROSELLO -->
-        <div class="carousel-wrapper">
-            <div class="carousel carousel-4">
-                <div><img src="img/mockup logo.png" alt="Progetto 4 - 1"></div>
-                <div><img src="img/piglietto da visita.png" alt="Progetto 4 - 2"></div>
-                <div><img src="img/tazze con sfondo.png" alt="Progetto 4 - 3"></div>
-            </div>
-            <p class="carousel-text">MIC: realizzazione del mio manuale di identità coordinata.
-                Creazione di mockup con il mio logo.
-            </p>
-        </div>
-    </div>
-</div>
-
-
-<div class="banner4">
-    <div id=contatti class="content">
-        <h2>Richiedi Informazioni</h2>
-        <form id="contact-form">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="surname">Cognome:</label>
-                <input type="text" id="surname" name="surname" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Numero di Telefono:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <button type="submit">Invia</button>
-        </form>
-    </div>
-</div>
-
-<footer class="footer">
-  <h2>CONTATTI</h2><br><br>
-  <h5><p>Email: <a href="matimarina2001@gmail.com">matimarina2001@gmail.com</a></p><br>
-  <p>Telefono: <a href="tel:3921965138">3921965138</a></p><br>
-  <p>Profilo Instagram: <a href="https://www.instagram.com/mattys.graphia/" target="_blank">mattys.graphia</a></p><br> 
-  <p>© 2024 Matilde Marina. Tutti i diritti riservati.</p></h5>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.carousel').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true
-        });
-    });
-</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const burger = document.getElementById('burger');
-        const navigation = document.getElementById('navigation');
-
-        burger.addEventListener('click', function() {
-            navigation.classList.toggle('active');
-        });
-    });
-</script>
-<div id="backToTop">
-    <i class="fas fa-arrow-up"></i>
-</div>
-<script src="Javascript.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
-
